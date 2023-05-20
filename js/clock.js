@@ -2,10 +2,9 @@ let getName = prompt("Lutfen adinizi giriniz");
 let yourName = document.querySelector("#myName");
 
 if (typeof getName === "string" && getName.length != 0) {
-  yourName.innerHTML = `${getName[0].toUpperCase()}${getName
-    .slice(1)
-    .toLowerCase()}`;
-} else {
+  yourName.innerHTML = `${getName[0].toUpperCase()}${getName.slice(1).toLowerCase()}`;
+} 
+else {
   alert("gecerli bir isim giriniz");
 }
 
