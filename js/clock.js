@@ -1,7 +1,7 @@
 let getName = prompt("Lutfen adinizi giriniz");
 let yourName = document.querySelector("#myName");
 
-if (typeof getName == "string" && getName.length !== 0) {
+if (typeof getName === "string" && getName.length != 0) {
   yourName.innerHTML = `${getName[0].toUpperCase()}${getName
     .slice(1)
     .toLowerCase()}`;
@@ -43,4 +43,4 @@ day.textContent = `${days}`;
 setInterval(function () {
   const clock = new Date().toTimeString().slice(0, 8);
   myClock.textContent = clock;
-}, 1000);
+}, 1);
